@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richa Kumari | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- SVG Gradient Definition for Skill Circles -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <linearGradient id="skillGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#4D96FF"/>
+                <stop offset="100%" style="stop-color:#6BCB77"/>
+            </linearGradient>
+        </defs>
+    </svg>
+    
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-logo">
+            <span class="logo-text">RK</span>
+            <span class="logo-dot"></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active" data-text="Home">Home</a>
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+            <a href="#experience" class="nav-link" data-text="Work">Work</a>
+            <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="mailto:richazxz@gmail.com" class="hire-btn">
+                <span>Let's Talk</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#experience" class="mobile-link">Work</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <!-- Animated Grid Background -->
+        <div class="hero-grid"></div>
+        
+        <!-- Glowing Lines -->
+        <div class="glow-lines">
+            <div class="glow-line"></div>
+            <div class="glow-line"></div>
+            <div class="glow-line"></div>
+        </div>
+        
+        <div class="hero-content">
+
+            <!-- Creative Name Display -->
+            <div class="hero-name-wrapper">
+                <div class="name-decoration left">
+                    <span class="deco-bracket">{</span>
+                </div>
+                <div class="hero-name">
+                    <span class="greeting reveal-up">Hello, I'm</span>
+                    <h1 class="name reveal-up" style="animation-delay: 0.1s">Richa Kumari</h1>
+                </div>
+                <div class="name-decoration right">
+                    <span class="deco-bracket">}</span>
+                </div>
+            </div>
+            
+            <!-- Role with Typing Effect -->
+            <div class="hero-role reveal-up" style="animation-delay: 0.2s">
+                <span class="role-prefix">&lt;</span>
+                <span class="role-text">Frontend Developer</span>
+                <span class="role-suffix">/&gt;</span>
+                <span class="cursor-blink">|</span>
+            </div>
+            
+            <!-- Tagline -->
+            <p class="hero-tagline reveal-up" style="animation-delay: 0.3s">
+                Transforming ideas into <span class="highlight-text">seamless digital experiences</span> 
+                with <span class="highlight-text">React.js</span> & modern web technologies
+            </p>
+            
+            <!-- Tech Stack Pills -->
+            <div class="tech-stack reveal-up" style="animation-delay: 0.35s">
+                <span class="tech-pill"><i class="fab fa-react"></i> React</span>
+                <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">Next.js</span>
+            </div>
+            
+            
+            <!-- CTA Buttons -->
+            <div class="hero-actions reveal-up" style="animation-delay: 0.5s">
+                <a href="#projects" class="btn-primary magnetic-btn">
+                    <span>Explore Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="mailto:richazxz@gmail.com" class="btn-outline magnetic-btn">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="hero-socials reveal-up" style="animation-delay: 0.6s">
+                <a href="https://www.linkedin.com/in/richa-kumari-2403/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/richaq2" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://richakumari.in/" target="_blank" class="social-icon" aria-label="Portfolio">
+                    <i class="fas fa-globe"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <!-- Side Social Bar (Desktop) -->
+        <div class="hero-social">
+            <a href="https://www.linkedin.com/in/richa-kumari-2403/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/richaq2" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:richazxz@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title split-text">About Me</h2>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="visual-frame">
+                    <div class="frame-border"></div>
+                    <div class="visual-content">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="file-name">richa.tsx</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code><span class="keyword">const</span> <span class="variable">Richa</span> = () => {
+  <span class="keyword">return</span> {
+    <span class="property">role</span>: <span class="string">"Frontend Developer"</span>,
+    <span class="property">location</span>: <span class="string">"Chandigarh, India"</span>,
+    <span class="property">experience</span>: <span class="string">"3+ years"</span>,
+    <span class="property">passion</span>: <span class="string">"Building amazing UIs"</span>,
+    <span class="property">coffee</span>: <span class="boolean">true</span>,
+    <span class="property">available</span>: <span class="boolean">true</span>
+  };
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visual-decorations">
+                    <div class="deco-circle"></div>
+                    <div class="deco-dots"></div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-text-block">
+                    <p class="lead-text">
+                        I'm a passionate <span class="text-gradient">Frontend Developer</span> with a knack for transforming complex designs into seamless, interactive web experiences.
+                    </p>
+                    <p>
+                        With expertise in <strong>React.js, Next.js, Redux, and TypeScript</strong>, I specialize in building scalable, responsive, and user-centric web applications. My journey in tech has been driven by a constant desire to learn and innovate.
+                    </p>
+                    <p>
+                        I thrive in <strong>Agile environments</strong>, collaborating with cross-functional teams to deliver pixel-perfect designs. From optimizing performance to integrating complex APIs, I bring both technical excellence and creative problem-solving to every project.
+                    </p>
+                </div>
+                
+                <div class="about-highlights">
+                    <div class="highlight-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="card-content">
+                            <h4>Education</h4>
+                            <p>B.Tech. Computer Science</p>
+                            <span class="card-meta">Chandigarh University • 2018-2022</span>
+                        </div>
+                    </div>
+                    <div class="highlight-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="card-content">
+                            <h4>Certification</h4>
+                            <p>Building Modern Python Apps on AWS</p>
+                            <span class="card-meta">Coursera</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title split-text">Tech Arsenal</h2>
+        </div>
+        
+        <div class="skills-showcase">
+            <div class="skills-terminal-layout">
+                <!-- Terminal Style - npm install -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">
+                            <i class="fas fa-terminal"></i>
+                            richa@portfolio:~/skills
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line prompt">
+                            <span class="user">richa</span><span class="at">@</span><span class="host">dev</span>
+                            <span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+                            <span class="command typing">npm install frontend-stack</span>
+                        </div>
+                        
+                        <div class="terminal-line output">
+                            <span class="success">✓</span> Installing dependencies...
+                        </div>
+                        
+                        <div class="package-install" data-delay="1">
+                            <div class="package-row">
+                                <span class="package-icon react-color"><i class="fab fa-react"></i></span>
+                                <span class="package-name">react</span>
+                                <span class="package-version">@18.2.0</span>
+                                <div class="package-bar"><span class="fill" style="--fill: 95%"></span><span class="bar-percent">95%</span></div>
+                                <span class="package-status expert">EXPERT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="package-install" data-delay="2">
+                            <div class="package-row">
+                                <span class="package-icon next-color">▲</span>
+                                <span class="package-name">next</span>
+                                <span class="package-version">@14.0.0</span>
+                                <div class="package-bar"><span class="fill" style="--fill: 95%"></span><span class="bar-percent">95%</span></div>
+                                <span class="package-status expert">EXPERT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="package-install" data-delay="3">
+                            <div class="package-row">
+                                <span class="package-icon ts-color">TS</span>
+                                <span class="package-name">typescript</span>
+                                <span class="package-version">@5.3.0</span>
+                                <div class="package-bar"><span class="fill" style="--fill: 85%"></span><span class="bar-percent">85%</span></div>
+                                <span class="package-status advanced">ADVANCED</span>
+                            </div>
+                        </div>
+                        
+                        <div class="package-install" data-delay="4">
+                            <div class="package-row">
+                                <span class="package-icon js-color"><i class="fab fa-js"></i></span>
+                                <span class="package-name">javascript</span>
+                                <span class="package-version">@ES2024</span>
+                                <div class="package-bar"><span class="fill" style="--fill: 92%"></span><span class="bar-percent">92%</span></div>
+                                <span class="package-status expert">EXPERT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="package-install" data-delay="5">
+                            <div class="package-row">
+                                <span class="package-icon html-color"><i class="fab fa-html5"></i></span>
+                                <span class="package-name">html-css</span>
+                                <span class="package-version">@latest</span>
+                                <div class="package-bar"><span class="fill" style="--fill: 98%"></span><span class="bar-percent">98%</span></div>
+                                <span class="package-status expert">EXPERT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="terminal-line success-msg">
+                            <span class="success">✓</span> Added <span class="highlight">5 packages</span> in 2.3s
+                        </div>
+                        
+                        <div class="terminal-line prompt final">
+                            <span class="user">richa</span><span class="at">@</span><span class="host">dev</span>
+                            <span class="colon">:</span><span class="path">~</span><span class="dollar">$</span>
+                            <span class="cursor">▋</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hexagonal Tools Grid -->
+                <div class="hex-tools-container">
+                    <div class="hex-title">
+                        <span class="hex-label">Dev Toolkit</span>
+                        <span class="hex-subtitle">Hover to explore</span>
+                    </div>
+                    <div class="hex-grid">
+                        <div class="hex-item" data-tool="Redux" style="--hex-color: #764ABC">
+                            <div class="hex-inner">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.634 16.504c.87-.075 1.543-.818 1.5-1.705a1.642 1.642 0 0 0-1.643-1.583h-.054c-.91.032-1.622.81-1.59 1.72.032.47.2.858.465 1.14-1.002 1.994-2.526 3.455-4.82 4.686-1.56.837-3.177 1.15-4.782.943a5.19 5.19 0 0 1-3.08-1.473c-.907-.958-1.246-2.108-1.012-3.434.172-.948.587-1.72 1.215-2.29.02-.02.03-.04.05-.07a14.3 14.3 0 0 1-.39-1.235c-2.79 2.02-2.457 4.79-1.478 6.28.72 1.136 2.196 1.865 3.844 1.865.433 0 .877-.043 1.32-.14 2.835-.557 4.994-2.237 6.288-4.792l.137.008z"/></svg>
+                            </div>
+                            <span class="hex-tooltip">Redux</span>
+                        </div>
+                        <div class="hex-item" data-tool="Tailwind" style="--hex-color: #38BDF8">
+                            <div class="hex-inner">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/></svg>
+                            </div>
+                            <span class="hex-tooltip">Tailwind</span>
+                        </div>
+                        <div class="hex-item" data-tool="Git" style="--hex-color: #F05032">
+                            <div class="hex-inner">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="hex-tooltip">Git</span>
+                        </div>
+                        <div class="hex-item" data-tool="Figma" style="--hex-color: #A259FF">
+                            <div class="hex-inner">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <span class="hex-tooltip">Figma</span>
+                        </div>
+                        <div class="hex-item" data-tool="SASS" style="--hex-color: #CC6699">
+                            <div class="hex-inner">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <span class="hex-tooltip">SASS</span>
+                        </div>
+                        <div class="hex-item" data-tool="REST" style="--hex-color: #00C7B7">
+                            <div class="hex-inner">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <span class="hex-tooltip">REST APIs</span>
+                        </div>
+                        <div class="hex-item" data-tool="Vite" style="--hex-color: #646CFF">
+                            <div class="hex-inner">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <span class="hex-tooltip">Vite</span>
+                        </div>
+                    </div>
+                    <div class="hex-status">
+                        <div class="status-bar">
+                            <div class="status-fill"></div>
+                        </div>
+                        <span>100% Frontend Focused</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title split-text">Work Journey</h2>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+            
+            <div class="timeline-item reveal-timeline" data-aos="fade-right">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <h3 class="company-name">The Maverics Technologies Pvt Ltd</h3>
+                            <span class="role-badge">ReactJS Developer</span>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 2025 – Present</span>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <ul class="achievement-list">
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-rocket"></i></span>
+                                <p>Migrated a <strong>Fleet Management System</strong> frontend from Power BI to Next.js, improving performance and maintainability.</p>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-eye"></i></span>
+                                <p>Built an <strong>Eye Clinic Management System</strong> with React.js using TypeScript, implementing reusable components and API integration.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timeline-tech">
+                        <span>Next.js</span>
+                        <span>React.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item reveal-timeline" data-aos="fade-left">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <div class="company-info">
+                            <h3 class="company-name">Task US</h3>
+                            <span class="role-badge">Junior Developer</span>
+                        </div>
+                        <div class="timeline-date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Nov 2022 – Feb 2025</span>
+                        </div>
+                    </div>
+                    <div class="timeline-body">
+                        <ul class="achievement-list">
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-shield-alt"></i></span>
+                                <p>Developed and optimized <strong>secure, scalable frontend apps</strong> using React.js and Node.js.</p>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-tachometer-alt"></i></span>
+                                <p>Designed UI components with Redux and REST APIs, <strong>improving load speed by 30%</strong>.</p>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-cogs"></i></span>
+                                <p>Contributed to <strong>.NET API development</strong>, aligning backend with frontend features.</p>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-sync-alt"></i></span>
+                                <p>Automated deployment with CI/CD pipelines, <strong>reducing release cycles by 40%</strong>.</p>
+                            </li>
+                            <li>
+                                <span class="achievement-icon"><i class="fas fa-users"></i></span>
+                                <p>Collaborated with design and QA teams to deliver <strong>pixel-perfect, responsive UIs</strong>.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timeline-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Redux</span>
+                        <span>.NET</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title split-text">Featured Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <article class="project-card featured reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                        <!-- Replace src with your screenshot path -->
+                        <img src="images/project-student-management.png" alt="Student Management System" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://student-crm-frontend.netlify.app/"  target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">Student Management System</h3>
+                        <span class="project-type">Full Stack</span>
+                    </div>
+                    <p class="project-description">Role-based access, secure APIs with JWT, dashboards for financial & academic analytics.</p>
+                    <div class="project-stack">
+                        <span>React.js</span>
+                        <span>JWT</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                        <!-- Replace src with your screenshot path -->
+                        <img src="images/project-property.png" alt="Property Maintenance Website" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://raipropertymaintenance.co.uk/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">Property Maintenance Website</h3>
+                        <span class="project-type">Web Design</span>
+                    </div>
+                    <p class="project-description">Beautiful website for maintenance services with built-in WhatsApp chat support and messaging flow.</p>
+                    <div class="project-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>WhatsApp API</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                        <!-- Replace src with your screenshot path -->
+                        <img src="images/project-task-manager.png" alt="Mini Task Manager" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://richa-mini-task-manager.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">Mini Task Manager</h3>
+                        <span class="project-type">React App</span>
+                    </div>
+                    <p class="project-description">Priority-based task management app with drag & drop, filters, and local storage persistence.</p>
+                    <div class="project-stack">
+                        <span>React.js</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                        <!-- Replace src with your screenshot path -->
+                        <img src="images/project-ai.png" alt="AI Assistant Web App" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">AI Assistant Web App</h3>
+                        <span class="project-type">Gen-AI</span>
+                    </div>
+                    <p class="project-description">Gen-AI student counselling app using React.js + LiveKit for real-time interactions.</p>
+                    <div class="project-stack">
+                        <span>React.js</span>
+                        <span>LiveKit</span>
+                        <span>Gen-AI</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                        <img src="images/project-digital-clock.png" alt="Digital Clock" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://richa-digital-analog-clock.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">Digital Clock</h3>
+                        <span class="project-type">JavaScript</span>
+                    </div>
+                    <p class="project-description">Sleek digital clock with real-time updates, multiple themes, and smooth animations.</p>
+                    <div class="project-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card reveal-project">
+                <div class="project-visual">
+                    <div class="project-preview">
+                 <img src="images/insta-transcript.png" alt="Instagram Transcript UI" class="project-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="project-overlay">
+                        <a href="https://instatranscript-ui.netlify.app/#" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3 class="project-title">Instagram Transcript UI</h3>
+                        <span class="project-type">UI/UX</span>
+                    </div>
+                    <p class="project-description">Developed transcript interface for Instagram reels with seamless user experience.</p>
+                    <div class="project-stack">
+                        <span>React.js</span>
+                        <span>CSS3</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg">
+            <div class="contact-shape shape-1"></div>
+            <div class="contact-shape shape-2"></div>
+        </div>
+        
+        <div class="section-header light">
+            <span class="section-number">05</span>
+            <h2 class="section-title split-text">Let's Connect</h2>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card reveal-contact">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <a href="mailto:richazxz@gmail.com">richazxz@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="info-card reveal-contact">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Phone</h4>
+                        <a href="tel:+919113189311">+91 9113189311</a>
+                    </div>
+                </div>
+                
+                <div class="info-card reveal-contact">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Location</h4>
+                        <span>Chandigarh, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-cta reveal-contact">
+                <h3>Ready to build something amazing together?</h3>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:richazxz@gmail.com" class="cta-main magnetic-btn">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/richa-kumari-2403/" target="_blank" class="social-btn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/richaq2" target="_blank" class="social-btn">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://richakumari.in/" target="_blank" class="social-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>RK</span>
+            </div>
+            <p class="footer-text">Designed & Built by Richa Kumari</p>
+            <p class="footer-copyright">© 2026 All rights reserved.</p>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
